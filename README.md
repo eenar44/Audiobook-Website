@@ -1,6 +1,9 @@
 # Audiobook-Website
 A front-end demo website for a fictional online audiobook store, built as a first-year university project. Includes a working registration form, a promotional advert carousel, and a contact form with client-side validation.
 
+## Live demo
+Click [here](https://eenar89.github.io/Audiobook-Website/) to access GitHub pages link.
+
 ## Features
 - Responsive navbar and footer loaded via external HTML files
 - Rotating promotional advert carousel (book of the day, seasonal sales, events)
