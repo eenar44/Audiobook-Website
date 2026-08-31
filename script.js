@@ -134,13 +134,20 @@ $(document).ready(function () {
     $("#contact-form").submit(function (event) {
         event.preventDefault(); // Prevent form submission
 
-        // Simulate a successful form submission
-        $("#contact-form").fadeOut(500, function () {
-            $("#contact-message").html("<p>Thank you for reaching out! We'll get back to you soon.</p>")
-                .css({ "font-size": "1.2em", "font-weight": "bold", "text-align": "center", "opacity": "0" })
-                .fadeIn(500)
-                .animate({ opacity: "1" }, 500);
-        });
+        emailjs.sendForm('service_xabhyfh', 'template_c8v5fle', this)
+            .then(() => {
+                $("#contact-form").fadeOut(500, function () {
+                    $("#contact-message").html("<p>Thank you for reaching out! We'll get back to you soon.</p>")
+                        .css({ "font-size": "1.2em", "font-weight": "bold", "text-align": "center", "opacity": "0" })
+                        .fadeIn(500)
+                        .animate({ opacity: "1" }, 500);
+                });
+            })
+            .catch(() => {
+                $("#contact-message").html("<p>Something went wrong — please try again later.</p>")
+                    .css({ "font-size": "1.2em", "font-weight": "bold", "text-align": "center", "color": "red" })
+                    .fadeIn(500);
+            });
     });
 });
 
