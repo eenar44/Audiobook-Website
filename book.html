@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Elements -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta elements for SEO -->
+    <meta name="description"
+        content="Discover in-depth details about this audiobook, including the author, summary, price, and user reviews. Buy now and start listening today!">
+    <meta name="keywords"
+        content="audiobook details, book information, book summary, author biography, audiobook reviews, buy audiobook, listen online, book price, best audiobooks, audiobook store, fiction, non-fiction, genres, bestseller audiobooks">
+    <meta name="author" content="Online Audio Books">
+
+    <!-- Favicon link -->
+    <link rel="icon" href="Graphics/favicon.png" type="image/png">
+    
+    <!-- Fonts -->
+    <!-- Playfair -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
+    <!-- Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Book Details | Online Audio Books</title>
+
+</head>
+
+<body>
+    <!-- Header and Navigation Bar -->
+    <header id="navbar-placeholder"></header>
+
+    <main>
+        <!-- Contains all the elements on the page that can dynamically change -->
+        <section class="book-container">
+            <!-- Each element is dynamically changed using their id tag in the Java Script -->
+
+            <!-- Text and Image Elements on the page -->
+            <h2 id="book-title">Book Title</h2>
+            <img id="book-image" src="" alt="Book Cover">
+            <h4 id="book-author"></h4>
+            <h4 id="book-price"></h4>
+
+            <!-- Buy Now button on screen -->
+            <button class="buy-btn"> Buy Now
+                <img src="Graphics/bag_icon.png" alt="Buy Now">
+            </button>
+
+            <!-- Book Description tag -->
+            <p id="book-desc"></p>
+
+            <!-- Book summary tag -->
+            <section id="book-summary">
+                <h3>Summary</h3>
+                <!-- Text if unable to retrieve the data -->
+                <p id="book-summary-text">This is a brief summary of the audiobook.</p>
+            </section>
+
+            <!-- Book Biography tag -->
+            <section id="author-biography">
+                <h3>About the Author</h3>
+                <!-- Text if unable to retrieve the data -->
+                <p id="author-bio">This is the author's biography.</p>
+            </section>
+
+
+            <!-- Reviews Section -->
+            <section id="book-reviews">
+                <h3>User Reviews</h3>
+                <table id="reviews-list">
+                    <!-- Default reviews on screen with a button prompting to add reviews -->
+                    <tr>
+                        <th>Reviewer</th>
+                        <th>Review</th>
+                    </tr>
+                    <tr>
+                        <td><strong>John Doe</strong></td>
+                        <td>Amazing audiobook! Loved every minute of it.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Jane Smith</strong></td>
+                        <td>A great listen, very engaging and informative.</td>
+                    </tr>
+                    <!-- More reviews will be dynamically inserted here -->
+                </table>
+                <button id="add-review">Add a Review</button>
+            </section>
+
+        </section>
+
+        <!-- Review modal form -->
+        <form id="review-form" class="modal">
+            <label for="reviewer-name">Your Name:</label>
+            <input type="text" id="reviewer-name" required>
+
+            <label for="review-text">Your Review:</label>
+            <textarea id="review-text" rows="4" required></textarea>
+
+            <button type="submit">Submit Review</button>
+            <button type="button" id="cancel-review">Cancel</button>
+        </form>
+
+        <!-- Purchase Confirmation Form -->
+        <form id="purchase-form" class="modal">
+            <p id="confirm-text">Are you sure you want to buy this book?</p>
+            <button type="button" id="cancel-btn">✖ Cancel</button>
+            <button type="submit" id="confirm-btn">Continue ⮚</button>
+        </form>
+
+        <!-- Success Message Form -->
+        <form id="success-form" class="modal">
+            <p id="success-text"></p>
+            <button type="button" id="close-btn">Close</button>
+        </form>
+
+        <!-- Decorative Circle -->
+        <div class="circle-container" id="right-circle"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer-placeholder"></footer>
+
+    <!-- Script link for slicknav -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+    <!-- Link to JS -->
+    <script src="script.js"></script>
+
+    <!-- Page specific Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Loads the books information from the JSON file using the ID of each book
+            // and displays it on the page
+            fetch('books.json')
+                .then(response => response.json())
+                .then(books => {
+                    const bookId = new URLSearchParams(window.location.search).get('id');
+                    const book = books.find(b => b.id === bookId);
+
+                    // If the book is found, update the page elements with its data
+                    // Otherwise, show an alert message
+                    if (book) {
+                        document.getElementById("book-title").textContent = book.title;
+                        document.getElementById("book-author").textContent = "by " + book.author;
+                        document.getElementById("book-image").src = book.image;
+                        document.getElementById("book-desc").textContent = book.desc;
+                        document.getElementById("book-price").textContent = book.price;
+                        document.getElementById("book-summary-text").textContent = book.summary;
+                        document.getElementById("author-bio").textContent = book.biography;
+                    } else {
+                        alert("Book not found!");
+                    }
+                })
+                // Handle errors in fetching the JSON file
+                // and display an error message in the console
+                .catch(error => {
+                    console.error('Error loading book data:', error);
+                });
+        });
+
+        // Functionality for the Buy Now button and purchase confirmation
+        // and success messages
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // Elements for purchase confirmation and success messages
+            // and their respective buttons
+            const buyButton = document.querySelector(".buy-btn");
+            const purchaseForm = document.getElementById("purchase-form");
+            const successForm = document.getElementById("success-form");
+            const confirmText = document.getElementById("confirm-text");
+            const successText = document.getElementById("success-text");
+            
+            // Variable to store the selected book title
+            let selectedBook = "";
+
+            // Open the purchase confirmation form to ask the user if they want to buy the book
+            // when the Buy Now button is clicked
+            buyButton.addEventListener("click", function () {
+                selectedBook = document.getElementById("book-title").textContent; // Fetches the book title
+                confirmText.textContent = `Are you sure you want to buy "${selectedBook}"?`;
+                purchaseForm.style.display = "block";
+            });
+
+            // Cancel Purchase
+            document.getElementById("cancel-btn").addEventListener("click", function () {
+                purchaseForm.style.display = "none";
+            });
+
+            // Confirm Purchase (Submit Form)
+            purchaseForm.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent actual form submission
+                purchaseForm.style.display = "none"; // Close first modal
+                successText.textContent = `🎉 Congrats! You bought "${selectedBook}"!`;
+                successForm.style.display = "block"; // Show success message
+            });
+
+            // Close Success Message
+            document.getElementById("close-btn").addEventListener("click", function () {
+                successForm.style.display = "none";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // Elements for adding reviews
+            // and their respective buttons
+            const addReviewBtn = document.getElementById("add-review");
+            const reviewForm = document.getElementById("review-form");
+            const cancelReviewBtn = document.getElementById("cancel-review");
+
+            // Show the review form when button is clicked
+            addReviewBtn.addEventListener("click", function () {
+                reviewForm.style.display = "flex";
+            });
+
+            // Hide form when cancel button is clicked
+            cancelReviewBtn.addEventListener("click", function () {
+                reviewForm.style.display = "none";
+            });
+
+            // Handle form submission
+            reviewForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                // Get input values
+                const reviewerName = document.getElementById("reviewer-name").value.trim();
+                const reviewText = document.getElementById("review-text").value.trim();
+
+                if (reviewerName && reviewText) {
+                    // Create a new table row
+                    const reviewTable = document.getElementById("reviews-list");
+                    const newRow = reviewTable.insertRow(-1);
+
+                    // Insert cells
+                    const nameCell = newRow.insertCell(0);
+                    const reviewCell = newRow.insertCell(1);
+
+                    nameCell.innerHTML = `<strong>${reviewerName}</strong>`;
+                    reviewCell.textContent = reviewText;
+
+                    // Clear form and hide it
+                    reviewForm.reset();
+                    reviewForm.style.display = "none";
+                }
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

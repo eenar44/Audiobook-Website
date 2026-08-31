@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Elements -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta elements for SEO -->
+    <meta name="description"
+        content="Explore our extensive catalogue of audiobooks, featuring a wide range of genres and authors. Find your next great listen with ease.">
+    <meta name="keywords"
+        content="audiobook catalogue, book collection, browse audiobooks, fiction, non-fiction, bestseller audiobooks, new releases, classic audiobooks, fantasy, sci-fi, mystery, thriller, romance, self-help, learning, biography, history, literature, online audiobook store, audiobook genres">
+    <meta name="author" content="Online Audio Books">
+
+    <!-- Favicon link -->
+    <link rel="icon" href="Graphics/favicon.png" type="image/png">
+
+    <!-- Fonts -->
+    <!-- Playfair -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
+    <!-- Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Catalogue | Online Audio Books</title>
+
+</head>
+
+<body>
+    <!-- Header and Navigation Bar -->
+    <header id="navbar-placeholder"></header>
+
+    <main>
+        <!-- Page Title -->
+        <h2>Catalogue</h2>
+
+        <!-- Container for the table -->
+        <table class="catalogue">
+            <!-- Fiction -->
+            <tr>
+                <!-- 
+                    Every other row is table header, for that section
+                    Table header spanns 3 columns to centeralise it 
+                    ID used to link to the section in the table of contents from the home page
+                 -->
+                <th id="fiction" colspan="3">
+                    <!-- Style for only this header to reduce space above the table -->
+                    <h3 style="margin-top: 0;">Fiction</h3>
+                </th>
+            </tr>
+            <!-- Row containing the 3 books in that category -->
+            <tr>
+                <!-- 
+                    Each book is contained in a book card
+                    Each book card has a data-title attribute for the book title
+                    Each book card has a buy button that opens a modal when clicked
+                    Each book card has an image, title, author, and price
+                    Each book card has a link to the book page
+                -->
+                <td class="book-card" data-title="The Great Gatsby">
+                    <a href="book.html?id=great-gatsby">
+                        <img src="Graphics/Books/The_Great_Gatsby-F._Scott_Fitzgerald.jpg" alt="The Great Gatsby cover">
+                        <h4>The Great Gatsby</h4>
+                        <p>F. Scott Fitzgerald</p>
+                        <p>£7.99</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy The Great Gatsby"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="To Kill a Mockingbird">
+                    <a href="book.html?id=to-kill-a-mockingbird">
+                        <img src="Graphics/Books/To_Kill_a_Mockingbird-Harper_Lee.jpg"
+                            alt="To Kill a Mockingbird cover">
+                        <h4>To Kill a Mockingbird</h4>
+                        <p>Harper Lee</p>
+                        <p>£9.99</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy To Kill a Mockingbird"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="1984">
+                    <a href="book.html?id=1984">
+                        <img src="Graphics/Books/1984-George_Orwell.jpg" alt="1984 cover">
+                        <h4>1984</h4>
+                        <p>George Orwell</p>
+                        <p>£8.49</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy 1984"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+            </tr>
+
+            <!-- Non-Fiction -->
+            <tr>
+                <th id="non-fiction" colspan="3">
+                    <h3>Non-Fiction</h3>
+                </th>
+            </tr>
+            <tr>
+                <td class="book-card" data-title="Sapiens: A Brief History of Humankind">
+                    <a href="book.html?id=sapiens">
+                        <img src="Graphics/Books/Sapiens-Yuval_Noah_Harari.jpg" alt="Sapiens cover">
+                        <h4>Sapiens: A Brief History of Humankind</h4>
+                        <p>Yuval Noah Harari</p>
+                        <p>£12.99</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy Sapiens: A Brief History of Humankind"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="Educated">
+                    <a href="book.html?id=educated">
+                        <img src="Graphics/Books/Educated-Tara_Westover.jpg" alt="Educated cover">
+                        <h4>Educated</h4>
+                        <p>Tara Westover</p>
+                        <p>£10.99</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy Educated"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="Becoming">
+                    <a href="book.html?id=becoming">
+                        <img src="Graphics/Books/Becoming-Michelle_Obama.jpg" alt="Becoming cover">
+                        <h4>Becoming</h4>
+                        <p>Michelle Obama</p>
+                        <p>£11.49</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy Becoming"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+            </tr>
+
+            <!-- Science Fiction & Fantasy -->
+            <tr>
+                <th id="si-fi" colspan="3">
+                    <h3>Science Fiction & Fantasy</h3>
+                </th>
+            </tr>
+            <tr>
+                <td class="book-card" data-title="Dune">
+                    <a href="book.html?id=dune">
+                        <img src="Graphics/Books/Dune-Frank_Herbert.jpg" alt="Dune cover">
+                        <h4>Dune</h4>
+                        <p>Frank Herbert</p>
+                        <p>£10.99</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy Dune"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="The Hobbit">
+                    <a href="book.html?id=the-hobbit">
+                        <img src="Graphics/Books/The_Hobbit-J.R.R.-Tolkien.jpg" alt="The Hobbit cover">
+                        <h4>The Hobbit</h4>
+                        <p>J.R.R. Tolkien</p>
+                        <p>£9.49</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy The Hobbit"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="Ender's Game">
+                    <a href="book.html?id=enders-game">
+                        <img src="Graphics/Books/Enders_Game-Orson_Scott_Card.jpg" alt="Ender's Game cover">
+                        <h4>Ender's Game</h4>
+                        <p>Orson Scott Card</p>
+                        <p>£8.99</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy Ender's Game"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+            </tr>
+
+            <!-- Self-Help & Personal Development -->
+            <tr>
+                <th id="self-help" colspan="3">
+                    <h3>Self-Help & Personal Development</h3>
+                </th>
+            </tr>
+            <tr>
+                <td class="book-card" data-title="Atomic Habits">
+                    <a href="book.html?id=atomic-habits">
+                        <img src="Graphics/Books/Atomic_Habits-James_Clear.jpg" alt="Atomic Habits cover">
+                        <h4>Atomic Habits</h4>
+                        <p>James Clear</p>
+                        <p>£8.99</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy Atomic Habits"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="The Power of Now">
+                    <a href="book.html?id=the-power-of-now">
+                        <img src="Graphics/Books/The_Power_of_Now-Eckhart_Tolle.jpg" alt="The Power of Now cover">
+                        <h4>The Power of Now</h4>
+                        <p>Eckhart Tolle</p>
+                        <p>£9.99</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy The Power of Now"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="How to Win Friends and Influence People">
+                    <a href="book.html?id=how-to-win-friends-and-influence-people">
+                        <img src="Graphics/Books/How_to_Win_Friends_and_Influence_People-Dale_Carnegie.jpg"
+                            alt="How to Win Friends cover">
+                        <h4>How to Win Friends and Influence People</h4>
+                        <p>Dale Carnegie</p>
+                        <p>£7.99</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy How to Win Friends and Influence People"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+            </tr>
+
+            <!-- Children's Books -->
+            <tr>
+                <th id="children" colspan="3">
+                    <h3>Children's Books</h3>
+                </th>
+            </tr>
+            <tr>
+                <td class="book-card" data-title="Harry Potter and the Philosopher's Stone">
+                    <a href="book.html?id=harry-potter-and-the-philosophers-stone">
+                        <img src="Graphics/Books/Harry_Potter_and_the_Philosophers_Stone-J.K._Rowling.jpg"
+                            alt="Harry Potter cover">
+                        <h4>Harry Potter and the Philosopher's Stone</h4>
+                        <p>J.K. Rowling</p>
+                        <p>£8.99</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy Harry Potter and the Philosopher's Stone"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="Charlotte's Web">
+                    <a href="book.html?id=charlottes-web">
+                        <img src="Graphics/Books/Charlottes_Web-E.B._White.jpg" alt="Charlotte's Web cover">
+                        <h4>Charlotte's Web</h4>
+                        <p>E.B. White</p>
+                        <p>£6.99</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy Charlotte's Web"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="Matilda">
+                    <a href="book.html?id=matilda">
+                        <img src="Graphics/Books/Matilda-Roald_Dahl.jpg" alt="Matilda cover">
+                        <h4>Matilda</h4>
+                        <p>Roald Dahl</p>
+                        <p>£7.49</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy Matilda"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+            </tr>
+            <!-- Romance -->
+            <tr>
+                <th id="romance" colspan="3">
+                    <h3>Romance</h3>
+                </th>
+            </tr>
+            <tr>
+                <td class="book-card" data-title="The Hating Game">
+                    <a href="book.html?id=the-hating-game">
+                        <img src="Graphics/Books/The_Hating_Game-Sally_Thorne.jpg" alt="The Hating Game cover">
+                        <h4>The Hating Game</h4>
+                        <p>Sally Thorne</p>
+                        <p>£14.99</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy The Hating Game"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="Me Before You">
+                    <a href="book.html?id=me-before-you">
+                        <img src="Graphics/Books/Me_Before_You-Jojo_Moyes.jpg" alt="Me Before You cover">
+                        <h4>Me Before You</h4>
+                        <p>Jojo Moyes</p>
+                        <p>£8.49</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy Me Before You"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="The Rosie Project">
+                    <a href="book.html?id=the-rosie-project">
+                        <img src="Graphics/Books/The_Rosie Project-Graeme_Simsion.jpg" alt="The Rosie Project cover">
+                        <h4>The Rosie Project</h4>
+                        <p>Graeme Simsion</p>
+                        <p>£12.49</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy The Rosie Project"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+            </tr>
+            <!-- Mystry & Thriller -->
+            <tr>
+                <th id="mystery" colspan="3">
+                    <h3>Mystry & Thriller</h3>
+                </th>
+            </tr>
+            <tr>
+                <td class="book-card" data-title="The Silent Patient">
+                    <a href="book.html?id=the-silent-patient">
+                        <img src="Graphics/Books/The_Silent_Patient-Alex_Michaelides.jpg"
+                            alt="The Silent Patient cover">
+                        <h4>The Silent Patient</h4>
+                        <p>Alex Michaelides</p>
+                        <p>£9.49</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy The Silent Patient"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="Big Little Lies">
+                    <a href="book.html?id=big-little-lies">
+                        <img src="Graphics/Books/Big_Little_Lies-Liane_Moriarty.jpg" alt="Big Little Lies cover">
+                        <h4>Big Little Lies</h4>
+                        <p>Liane Moriarty</p>
+                        <p>£7.99</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy Big Little Lies"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="Gone Girl">
+                    <a href="book.html?id=gone-girl">
+                        <img src="Graphics/Books/Gone_Girl-Gillian_Flynn.jpg" alt="Gone Girl cover">
+                        <h4>Gone Girl</h4>
+                        <p>Gillian Flynn</p>
+                        <p>£8.49</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy Gone Girl"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+            </tr>
+            <!-- History -->
+            <tr>
+                <th id="history" colspan="3">
+                    <h3>History</h3>
+                </th>
+            </tr>
+            <tr>
+                <td class="book-card" data-title="The Diary of a Young Girl">
+                    <a href="book.html?id=the-diary-of-a-young-girl">
+                        <img src="Graphics/Books/The_Diary_of_a_Young Girl-Anne_Frank.jpg"
+                            alt="The Diary of a Young Girl cover">
+                        <h4>The Diary of a Young Girl</h4>
+                        <p>Anne Frank</p>
+                        <p>£9.49</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy The Diary of a Young Girl"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="The Splendid and the Vile">
+                    <a href="book.html?id=the-splendid-and-the-vile">
+                        <img src="Graphics/Books/The_Splendid_and_the_Vile-Erik_Larson.jpg"
+                            alt="The Splendid and the Vile cover">
+                        <h4>The Splendid and the Vile</h4>
+                        <p>Erik Larson</p>
+                        <p>£10.49</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy The Splendid and the Vile"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+                <td class="book-card" data-title="Guns, Germs, and Steel">
+                    <a href="book.html?id=guns-germs-and-steel">
+                        <img src="Graphics/Books/Guns_Germs_and_Steel-Jared_Diamond.jpg"
+                            alt="Guns, Germs, and Steel cover">
+                        <h4>Guns, Germs, and Steel</h4>
+                        <p>Jared Diamond</p>
+                        <p>£11.49</p>
+                    </a>
+                    <button class="buy-btn" aria-label="Buy Guns, Germs, and Steel"> Buy Now
+                        <img src="Graphics/bag_icon.png" alt="Buy Now">
+                    </button>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Purchase Confirmation Form -->
+        <form id="purchase-form" class="modal">
+            <p id="confirm-text">Are you sure you want to buy this book?</p>
+            <button type="button" id="cancel-btn">✖ Cancel</button>
+            <button type="submit" id="confirm-btn">Continue ⮚</button>
+        </form>
+
+        <!-- Success Message Form -->
+        <form id="success-form" class="modal">
+            <p id="success-text"></p>
+            <button type="button" id="close-btn">Close</button>
+        </form>
+
+        <!-- Decorative Circle -->
+        <div class="circle-container" id="left-circle"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer-placeholder"></footer>
+
+    <!-- Script link for slicknav -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+    <!-- Link to JS -->
+    <script src="script.js"></script>
+
+    <!-- Page specific Script -->
+    <script>
+        // Functionality for the Buy Now button and purchase confirmation
+        // and success messages
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // Elements for purchase confirmation and success messages
+            // and their respective buttons
+            const buyButtons = document.querySelectorAll(".buy-btn");
+            const purchaseForm = document.getElementById("purchase-form");
+            const successForm = document.getElementById("success-form");
+            const confirmText = document.getElementById("confirm-text");
+            const successText = document.getElementById("success-text");
+
+            // Variable to store the selected book title
+            let selectedBook = "";
+
+            // Open the purchase confirmation form to ask the user if they want to buy the book
+            // when the Buy Now button is clicked
+            buyButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    selectedBook = this.closest("td").getAttribute("data-title");
+                    confirmText.textContent = `Are you sure you want to buy "${selectedBook}"?`;
+                    purchaseForm.style.display = "block";
+                });
+            });
+
+            // Cancel Purchase
+            document.getElementById("cancel-btn").addEventListener("click", function () {
+                purchaseForm.style.display = "none";
+            });
+
+            // Confirm Purchase (Submit Form)
+            purchaseForm.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent actual form submission
+                purchaseForm.style.display = "none"; // Close first modal
+                successText.textContent = `🎉 Congrats! You bought "${selectedBook}"!`;
+                successForm.style.display = "block"; // Show success message
+            });
+
+            // Close Success Message
+            document.getElementById("close-btn").addEventListener("click", function () {
+                successForm.style.display = "none";
+            });
+        });
+    </script>
+
+</body>
+
+</html>

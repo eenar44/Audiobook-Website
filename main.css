@@ -1,0 +1,1207 @@
+* {
+    font-family: Nunito, sans-serif; /* Default font for all elements */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+
+/************* Tags *************/
+body, html {
+    margin: 0; /* Resets default margin for body and html */
+    padding: 0; /* Resets default padding for body and html */
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+    background-color: #f5f0e1; /* Light background color for the entire page */
+}
+
+main {
+    max-width: 1024px; /* Sets a maximum width for the main content area */
+    width: 95%; /* Sets a width of 95% of the viewport */
+    margin: 0 auto; /* Centers the main content area */
+    padding: 2% 0 0 2%; /* Adds padding to the top and left of the main content area */
+    z-index: 4; /* Ensures the main content is above other elements */
+    position: relative; /* Allows for absolute positioning of child elements */
+    
+    
+    /* border: #333 3px solid; */
+}
+
+header {
+    position: fixed; /* Keeps the header/navbar at the top of the page */
+    top: 0; /* Aligns the header to the top of the viewport */
+    width: 100%; /* Full width of the viewport */
+    background: #f5f0e1; /* Light background color for the header */
+    color: black; /* Text color for the header */
+    padding: 5px 20px; /* Padding around the header content */
+    z-index: 1000; /* Ensures the header is above other elements */
+    border-bottom: 2px solid black; /* Bottom border for the header */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Space between logo and nav items */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect for depth */
+}
+
+h2 {
+    font-family: "Playfair Display", serif; /* Playfair font for h2 */
+    font-size: 3em; /* Font size for h2 */
+    align-items: flex-start; /* Aligns items to the start of the flex container */
+    width: 100%; /* Full width of the container */
+    padding-top: 5%; /* Padding at the top of the h2 */
+}
+
+h3 {
+    font-family: "Playfair Display", serif; /* Playfair font for h3 */
+    font-size: 2.5em; /* Font size for h3 */
+    margin-bottom: 0%; /* No margin at the bottom of the h3 */
+    text-align: center; /* Centers the text horizontally */
+    color:black; /* Text color for h3 */
+}
+
+h4 {
+    font-family: Nunito, sans-serif; /* Default font for h4 */
+	font-size: 1.2em; /* Font size for h4 */
+    margin: 0; /* No margin for h4 */
+    text-align: center; /* Centers the text horizontally */
+    color:black; /* Text color for h4 */
+}
+
+
+p {
+    text-align: center; /* Centres the text horizontally */
+    margin: 0 auto; /* Centres the block element */
+    max-width: 97%; /* Limits the width of the paragraph */
+    padding-bottom: 4%; /* Padding at the bottom of the paragraph */
+}
+
+aside {
+    position: relative; /*  Allows it to stretch beyond the main content */
+    width: 35%;  /* Width of the aside section */
+    height: 35rem;  /* Height of the aside section necessary when resizing due to the realative positin of the aside*/
+    float: right; /* Floats the aside to the right of the main content */
+}
+
+form {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stacks items vertically */
+    gap: .25rem; /* Space between items */
+    max-width: 40rem; /* Maximum width for the form */
+    margin: 0 auto; /* Centers the form */
+    align-items: center; /* Centers items horizontally */
+}
+
+/* checkboxes on the register form */
+label {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Centers items vertically */
+    font-size: 0.9em; /* Font size for labels */
+    text-align: left; /* Aligns text to the left */
+    width: 100%; /* Full width of the container */
+    gap: .75rem; /* Space between checkbox and input */
+}
+
+label input {
+    width: auto; /* Width of the checkbox */
+    margin: 0; /* No margin for the checkbox */
+    padding: 0; /* No padding for the checkbox */
+}
+
+a {
+    color: #cc8344; /* Link color */
+    text-decoration: none; /* No underline by default */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/****** Button styles ******/
+button {
+    padding: .5rem 1.25rem; /* Padding for the button */
+    background-color: #f5f0e1; /* Light background color for the button */
+    border: 2px solid #cc8344; /* Outer border */
+    color: #cc8344; /* Text color for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s; /* Smooth transition for hover effects */
+    border-radius: 15px; /* Rounded corners */
+    position: relative; /* Allows for absolute positioning of pseudo-elements */
+    overflow: hidden; /* Ensures pseudo-element is contained */
+}
+
+/* Create a second border */
+button::before {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute; /* Absolute positioning */
+    top: 5px; /* Positioning from the top */
+    left: 5px; /* Positioning from the left */
+    right: 5px; /* Positioning from the right */
+    bottom: 5px; /* Positioning from the bottom */
+    border: 1px solid #cc8344; /* Outer border */
+    border-radius: 10px; /* Slightly larger radius for outer border */
+    pointer-events: none; /* Prevents interaction with the pseudo-element */
+}
+
+button:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Input for contact forms */
+input, textarea {
+    width: 100%; /* Full width of the container */
+    padding: 4%; /* Padding for input fields */
+    border: 2px solid #cc8344; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    font-style: italic; /* Italic font style */
+    margin-bottom: 4%; /* Space between input fields */
+}
+
+/* Text-area specific styles */
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%; /* Full width of the container */
+    padding: 3%; /* Padding on the inside of the input fields */
+    border: 2px solid #cc8344; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    font-style: italic; /* Italic font style */
+}
+
+/************* Generic section styling *************/
+.section {
+    min-height: 95vh; /* Minimum height of 100% of the viewport height */
+    padding: 5%; /* padding for every section */
+    display: flex; /* All sections use flexbox to align */
+    flex-direction: column; /* Generally in a section, items will be aligned in a column */
+    justify-content: center; /* Generally, elements will be aligned to the middle of their section*/
+    align-items: center; /* Generally, elements will be aligned to the centre of their section vertically */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position to stay in place */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for the size of the modal */
+    background-color: #f5f0e1; /* Light background color for the modal */
+    border: 2px solid #cc8344; /* Border color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for depth */
+    padding: 3%; /* Padding inside the modal */
+    text-align: center; /* Center text inside the modal */
+    z-index: 1000; /* Ensure modal is above other elements */
+    width: 25%; /* Width of the modal */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.modal p {
+    margin-bottom: .5rem; /* Space between paragraphs */
+}
+
+/****** General Decorative Circle Style ******/
+.circle-container {
+    border-radius: 50%; /* Makes the container circular */
+    position: relative; /* Allows for absolute positioning of child elements */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    background-color: #ba9ed4; /* Background color for the circle */
+    flex-direction: column; /* Stacks items vertically */
+}
+
+.circle-container::after {
+    content: ""; /* Empty content for pseudo-element */
+    position: absolute; /* Absolute positioning */
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    border-radius: 50%; /* Makes the pseudo-element circular */
+    background-color: rgba(186, 158, 212, 0.5); /* Same colour but transparent */
+    bottom: 15%; /* Positioning from the bottom */
+    left: 5%; /* Positioning from the left */
+    z-index: 1; /* Ensures the pseudo-element is behind other elements */
+}
+
+/************* Specific Section Styles *************/
+
+/****** Home and Advert Container ******/
+.home-advert-container {
+    min-height: 40rem; /* Maintain consistent section height */
+    padding: 0 0 0 5%; /* Padding for the container */
+    gap: 2%; /* Space between home and advert sections */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    margin-bottom: 5%; /* Space below the container */
+}
+
+/* Home section containing the logo and the "browse our collections button */
+.home {
+    max-width: 65%; /* Width of the home section */
+    padding: 2%; /* Padding for the home section */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stacks items vertically */
+    justify-content: flex-start; /* Aligns items to the start of the section */
+    float: left; /* Floats the home section to the left of the main content */
+}
+
+/* Logo on the home screen */
+.home img {
+    max-width: 110%; /* Width of the logo image */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image is well contained within the given size */
+    margin-top: 25%; /* Space above the logo */
+    position: relative; /* Allows for absolute positioning of child elements */
+    left: -15%; /* Adjusts the position of the logo */
+}
+
+/* Browse Collection Button on Home Screen */
+#browse-collection {
+    margin: 10% 0 0 60%; /* Positioning of the button */
+}
+
+/* Aside Advert on Home Screen */
+.advert {
+    max-width: 35%; /* Width of the advert section */
+    font-style: italic; /* Italic font style for the advert section */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    position: relative; /* Allows for absolute positioning of child elements */
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally */
+    text-align: center; /* Centers text inside the advert section */
+    padding: 2rem; /* Padding for the advert section */
+    margin-top: 6rem; /* Space above the advert section */
+}
+
+.advert-content {
+    position: absolute; /* Absolute positioning for the advert content */
+    left: 60%; /* Positioning from the left */
+    width: 15rem; /* Width of the advert content */
+    transform: translateX(-50%); /* Centers the content horizontally */
+    z-index: 3; /* Ensures it’s above the circles */
+    text-align: center; /* Centers text inside the advert content */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+
+    /* Override .section styles */
+    display: block !important; /* Ensures the advert content is displayed as a block element */
+    min-height: auto !important; /* Prevents the content from being cut off */
+    padding: 0 !important;  /* No padding for the advert content */
+    justify-content: unset !important;  /* Prevents content from being cut off */
+    align-items: unset !important;  /* Prevents content from being cut off */
+    flex-direction: unset !important;   /* Prevents content from being cut off */
+}
+
+.advert-content h3, .advert-content img {
+    opacity: 1; /* Fully visible by default */
+    transition: opacity 0.5s ease-in-out;   /* Smooth transition for opacity */
+}
+
+#advert-title { 
+    position: absolute; /* Positioning for the title */
+    top: -2rem; /* Positioning from the top */
+    left: 1rem; /* Positioning from the left */
+}
+
+#advert-img { 
+    position: absolute; /* Positioning for the image */
+    top: 8rem; /* Positioning from the top */
+    left: 0; /* Positioning from the left */
+    max-width: 16rem; /* Width of the advert image */
+    width: 100%; /* Full width of the container */
+    object-fit: cover; /* Ensures the image is well contained within the given size */
+    border-radius: 10px; /* Rounded corners for the image */
+}
+
+/****** About and Promise Section on Home page ******/
+.about {
+    padding-top: 0; /* Prevent content from being cut off */
+    position: relative; /* Allows the section to be moved */
+    clear: both; /* Clears the float from the home section */
+}
+
+#promise-h3 {
+    align-self: flex-end; /* Aligns the promise title to the end of the section */
+    width: auto; /* Width of the promise title */
+    padding-bottom: 3%; /* Space below the title */
+    padding: 5% 0 3% 0; /* Padding for the promise title */
+}
+
+/* Read More button leading to Future Strategy Page */
+#future-strategy {
+    margin: 5% 0 0 86%; /* Positioning of the button */
+}
+
+/****** Browse Our Collection Section on Home Page leading to calalogue page ******/
+.collection h2, p {
+    z-index: 3; /* Ensures text is above the circles elements */
+}
+
+.categories-table {
+    width: 100%; /* Full width of the table */
+    max-width: 90%; /* Keeps it from stretching too wide */
+    margin: 0 auto; /* Centers the table */
+    border-collapse: collapse; /* Collapses borders for a cleaner look */
+    z-index: 3; /* Ensures the table is above other elements */
+}
+
+.categories-table td {
+    padding: 1%; /* Padding for table cells */
+    text-align: center; /* Centers text inside the cells */
+    width: 50%; /* Ensures equal column width */
+}
+
+.categories-table button {
+    width: 100%; /* Ensures all buttons take full width of the cell */
+    height: 5rem; /* Ensures all buttons are the same height */
+    font-size: 1.2em; /* Makes text more readable */
+    padding: 1rem 3rem; /* Increases padding for a larger button feel */
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+}
+
+/****** Contact Us Section ******/
+.contact {
+    position: relative; /* Allows the section to be moved */
+    text-align: center; /* Centers text inside the section */
+    padding: 0 2% 10%; /* Padding for the contact section */
+    background-color: #f5f0e1; /* Light background color for the contact section */
+    border-radius: 15px; /* Rounded corners for the contact section */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+    border: 2px solid #cc8344; /* Border color for the contact section */
+    margin: 4% auto; /* Centers the contact section */
+    max-width: 50rem; /* Maximum width for the contact section */
+    z-index: 4; /* Ensures the contact section is above circle elements */
+}
+
+.contact-container {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-between; /* Space between items */
+    gap: 2%; /* Space between items */
+    margin-top: 2%; /* Space above the contact container */
+}
+
+#contact-form {
+    flex: 1; /* Takes available space */
+    min-width: 20rem; /* Minimum width for the form input boxes*/
+}
+
+.contact-info {
+    flex: 1; /* Takes available space */
+    text-align: left; /* Aligns text to the left */
+    min-width: 20rem; /* Minimum width for the contact info section */
+}
+
+/****** Catalogue Page ******/
+.catalogue {
+    width: 100%; /* Full width of the table */
+    border-collapse: separate; /* Collapses borders for a cleaner look */
+    border-spacing: 2rem; /* Space between table cells */
+    text-align: center; /* Centers text inside the table */
+    table-layout: fixed; /* Fixed layout for consistent column widths */
+}
+
+/* Ensure Table Data (`<td>`) Aligns in a Row */
+.catalogue tr {
+    display: table-row; /* Ensures rows are displayed as table rows */
+    width: 100%; /* Full width of the table */
+}
+
+.catalogue td {
+    display: table-cell; /* Ensures cells are displayed as table cells */
+    vertical-align: top; /* Aligns content to the top of the cell */
+    text-align: center; /* Centers text inside the cells */
+    width: 15rem; /* Fixed width for each cell */
+    height: 25rem; /* Fixed height for each cell */
+    overflow: hidden; /* Prevents content from overflowing */
+
+}
+
+/* Individual Book Cards */
+.book-card {
+    display: flex; /* Changed from block to flex */
+    flex-direction: column; /* Ensures content stacks properly */
+    align-items: center; /* Centers items horizontally */
+    width: 100%; /* Full width of the cell */
+    min-width: 15rem !important; /* Minimum width for each card */
+    max-width: 15rem !important; /* Maximum width for each card */
+    height: 100%; /* Full height of the cell */
+    min-height: 25rem; /* Minimum height for each card */
+    max-height: 25rem; /* Maximum height for each card */
+    padding: 5%; /* Padding for the card */
+    text-decoration: none; /* No underline for links */
+    color: black; /* Text color for the card */
+    border: 3px solid #cc8344; /* Orange border */
+    border-radius: 15px; /* Curved corners */
+    text-align: center; /* Centers text inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    overflow: hidden; /* Prevents content from making it resize */
+    box-sizing: border-box;
+}
+
+/* Book Cover Image Styling */
+.book-card img {
+    width: 100%; /* Full width of the card */
+    object-fit: cover; /* Ensures the image is well contained within the given size */
+    border-radius: 10px; /* Optional: curve image corners */
+}
+
+/* Book Title */
+.book-card h4 {
+    margin: 5% 0 3%; /* Space above and below the title */
+    color: #333; /* Darker color for the title */
+}
+
+/* Book Author and Price*/
+.book-card p {
+    font-size: 1em; /* Font size */
+    color: #666; /* Text colour */
+    margin-bottom: 3%; /* Space below */
+}
+
+/* Buy Now button on card */
+.buy-btn {
+    width: 8rem; /* Width of the button */
+}
+
+.buy-btn img {
+    width: 1rem; /* Width of the image inside the button */
+    height: 1rem; /* Height of the image inside the button */
+    border-radius: 0; /* No rounded corners for the image */
+}
+
+.book-card a:hover {
+    text-decoration: none; /* No underline on hover links */
+}
+
+/* Buy and Cancel Buttons on the modals*/
+#cancel-btn {
+    background-color:#f5f0e1; /* Light background color for the cancel button */
+}
+
+#confirm-btn, #close-btn {
+    background-color: #cc8344; /* Orange background color for the confirm and close buttons */
+    color: white; /* White text color for the confirm and close buttons */
+}
+
+#confirm-btn:hover, #close-btn:hover {
+    background-color: #a36633; /* Darker orange on hover */
+}
+
+/****** Book Information Page ******/
+
+/* Book Page Specific Styles */
+.book-container {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 2rem; /* Space between items */
+    padding: 3% 2%; /* Padding for the book container */
+}
+
+#book-image {
+    max-height: 15rem; /* Consistent height for the book image */
+    object-fit: cover; /* Ensures the image is well contained within the given size */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+}
+
+#book-title {
+    font-family: "Playfair Display", serif; /* Playfair font for book title */
+    font-size: 2.5em; /* Font size for book title */
+    margin-bottom: 0.5rem; /* Space below the title */
+    text-align: center; /* Centers the text horizontally */
+}
+
+#book-author, #book-price {
+    font-size: 1.25em; /* Font size for author and price */
+    margin: 0.5rem 0; /* Space above and below */
+    text-align: center; /* Centers the text horizontally */
+}
+
+#book-desc {
+    max-width: 800px; /* Maximum width for the description */
+    text-align: center; /* Centers the text horizontally */
+    font-size: 1.1em; /* Font size for description */
+    margin-top: 1.5rem; /* Space above the description */
+}
+
+#book-summary, #author-biography, #book-reviews {
+    width: 100%; /* Full width of the section */
+    margin-top: 2rem; /* Space above the section */
+    padding: 2rem; /* Padding for the section */
+    background-color: #fff; /* White background color for the section */
+    border-radius: 10px; /* Rounded corners for the section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+}
+
+#book-summary h3, #author-biography h3 #book-reviews h3{
+    font-family: "Playfair Display", serif; /* Playfair font for section titles */
+    font-size: 2em; /* Font size for section titles */
+    margin-bottom: 1rem; /* Space below the title */
+    text-align: center; /* Centers the text horizontally */
+}
+
+/* Table of reviews on the Individual book pages */
+#book-reviews table {
+    width: 100%; /* Full width of the table */
+    border-collapse: collapse; /* Collapses borders for a cleaner look */
+    background-color: #fafafa; /* Light background color for the table */
+    border-radius: 10px; /* Rounded corners for the table */
+    overflow: hidden; /* Prevents content from overflowing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+}
+
+#book-reviews th, #book-reviews td {
+    padding: 1rem; /* Padding for table cells */
+    text-align: left; /* Aligns text to the left */
+    border-bottom: 1px solid #ddd; /* Bottom border for table cells */
+}
+
+#book-reviews th {
+    background-color: #cc8344; /* Orange background color for header */
+    color: white; /* White text color for header */
+    font-weight: bold; /* Bold text for header */
+}
+
+#book-reviews tr:last-child td {
+    border-bottom: none; /* No bottom border for the last row */
+}
+
+/* Option to add a review to the website */
+#add-review {
+    margin-top: 1rem; /* Space above the button */
+    padding: .5rem 1.5rem; /* Padding for the button */
+    background-color: #cc8344; /* Orange background color for the button */
+    border: none; /* No border for the button */
+    color: white; /* White text color for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s; /* Smooth transition for hover effects */
+    border-radius: 20px; /* Rounded corners for the button */
+}
+
+#add-review:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+#review-form {
+    display: none; /* Hidden by default */
+    flex-direction: column; /* Stacks items vertically */
+    gap: 10px; /* Space between items */
+    max-width: 40rem; /* Maximum width for the form */
+    margin: 2% auto; /* Centers the form */
+    padding: 1.5rem; /* Padding for the form */
+    background-color: #fff; /* White background color for the form */
+    border-radius: 10px; /* Rounded corners for the form */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+}
+
+#review-form label {
+    font-weight: bold; /* Bold font for labels */
+}
+
+#review-form input, #review-form textarea {
+    width: 100%; /* Full width of the container */
+    padding: 5%; /* Padding for input fields */
+    border: 1px solid #ccc; /* Light border color */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#review-form button {
+    padding: .5rem 1.5rem; /* Padding for the button */
+    background-color: #cc8344; /* Orange background color for the button */
+    border: none; /* No border for the button */
+    color: white; /* White text color for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s; /* Smooth transition for hover effects */
+    border-radius: 20px; /* Rounded corners for the button */
+}
+
+#review-form button:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/****** Loyal Program Section Styles ******/
+.loyalty-program {
+    text-align: center; /* Centers all text and inline elements */
+}
+
+.loyalty-program a {
+    display: inline-block; /* Ensures the button behaves properly */
+}
+
+.loyalty-program h2 {
+    text-align: left; /* Aligns the title to the left */
+}
+
+.loyalty-program ul {
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Resets default padding */
+}
+
+.loyalty-program ul li {
+    font-size: 1em; /* Font size for list items */
+    position: relative; /* Allows for absolute positioning of pseudo-elements */
+    margin-bottom: 8px; /* Space below each list item */
+    color: #444; /* Text color for list items */
+}
+
+.loyalty-program ul li::before {
+    content: none; /* No default content for pseudo-element */
+}
+
+/****** Events & Promotions Section Styles ******/
+.events-container {
+    display: grid; /* Grid layout for events */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid columns */
+    gap: 5%; /* Space between grid items */
+    padding: 2% 0; /* Padding for above the events container */
+    justify-content: center; /* Centers items horizontally */
+}
+
+/* Individual Event Cards */
+.event-card {
+    background: #f5f0e1; /* Light background color for t he event card */
+    border: 2px solid #cc8344; /* Orange border color */
+    border-radius: 15px; /* Rounded corners for the card */
+    padding: 5%; /* Padding for the card */
+    text-align: center; /* Centers text inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Event Card Hover Effect */
+.event-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Event Titles */
+.event-card h3 {
+    font-size: 1.2em; /* Font size for event titles */
+    color: #333; /* Darker color for titles */
+    margin-bottom: 5%; /* Space below the title */
+}
+
+/* Event Description */
+.event-card p {
+    font-size: 1em; /* Font size for event description */
+    color: #666; /* Text color for description */
+}
+
+/* Extra Information */
+.event-info {
+    text-align: center; /* Centers text inside the event info section */
+    font-size: 1em; /* Font size for extra information */
+    color: #444; /* Text color for extra information */
+    margin-top: 5%; /* Space above the extra information */ 
+}
+
+/* Register Button on event page*/
+.register-here-section {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Centers items horizontally */
+}
+
+.register-btn {
+    background-color: #cc8344; /* Orange background color for the register button */
+    color: white; /* White text color for the register button */
+    border: none; /* No border for the register button */
+    padding: 4% 5%; /* Padding for the register button */
+    font-size: 1.2em; /* Font size for the register button */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 10px; /* Rounded corners for the register button */
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.register-btn:hover {
+    background-color: #a36633; /* Darker orange on hover */
+}
+
+/****** Registration Page ******/
+
+.register-section {
+    text-align: center; /* Centers all text and inline elements */
+    position: relative; /* Allows the section to be moved */
+    padding: 5%; /* Padding for the registration section */
+}
+
+.register-title {
+    font-family: 'Playfair Display', serif; /* Playfair font for title */
+    font-size: 3em; /* Font size for title */
+    font-weight: bold; /* Bold font for title */
+}
+
+.register-container {
+    background-color: #f5f0e1; /* Light background color for the registration container */
+    padding: 4%; /* Padding for the registration container */
+    border-radius: 15px; /* Rounded corners for the container */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+    display: inline-block; /* Ensures the container behaves like a block element */
+    border: 2px solid #cc8344; /* Orange border color */
+    position: relative; /* Allows for absolute positioning of child elements */
+    max-width: 50rem; /* Maximum width for the container */
+}
+
+#submit-btn {
+    margin-top: 5%; /* Space above the submit button */
+}
+
+/****** Style for Scrollable Sections ******/
+
+.scroll-buttons {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Centers items horizontally */
+    padding-top: 2%; /* Space above the buttons */
+    gap: 2rem; /* Adds space between left & right buttons */
+}
+
+/* Scrollable Wrapper (Ensures Horizontal Scrolling) */
+.scroll-wrapper {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Centers items vertically */
+    flex-grow: 1; /* Takes up remaining space */
+    width: 100%; /* Adjust width as needed */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    padding: 3% 0; /* Space above and below the scrollable area */
+}
+
+/* Table (Horizontally Scrollable) */
+.scroll-table {
+    border-collapse: collapse; /* Remove border-spacing */
+    display: flex; /* Flexbox for layout */ 
+    flex-direction: row; /* Aligns items in a row */
+    flex-wrap: nowrap; /* Prevents wrapping */
+    padding: 0 3%; /* Space on both sides */
+}
+
+/* Ensure Table Rows Act Like a Flex Container */
+.scroll-table tr {
+    display: flex; /* Flexbox for layout */
+    flex-direction: row; /* Aligns items in a row */
+    flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+.scroll-table-card {
+    width: 15rem; /* Fixed width for each card */
+    height: auto; /* Height adjusts based on content */
+    padding: 1%; /* Padding for the card */
+    text-align: center; /* Centers text inside the card */
+    background: #f5f0e1; /* Light background color for the card */
+    border: 2px solid #cc8344; /* Orange border color */
+    border-radius: 15px; /* Rounded corners for the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+#large-card {
+    width: 20rem; /* Fixed width for the large card */
+}
+
+/* Add spacing between cards */
+.scroll-table-card:not(:last-child) {
+    margin-right: 2%; /* Space between cards */
+}
+
+/* Profile Image */
+.scroll-table-card img {
+    width: 100%; /* Full width of the card */
+    height: 100%; /* Full height of the card */
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Ensures the image is well contained within the given size */
+}
+
+.scroll-table-card h4 {
+    margin: 10px 0 10px 0; /* Space above and below the title */
+    color: #333; /* Darker color for the title */
+}
+
+.scroll-table-card p {
+    font-size: 1em; /* Font size for description */
+    color: #666; /* Text color for description */
+    margin-bottom: 2%; /* Space below the description */
+}
+
+.scroll-table-card a:hover {
+    text-decoration: none; /* No underline on hover links */
+}
+
+/* Hover Effect */
+.scroll-table-card:hover {
+    transform: scale(1.05); /* Slightly enlarges the card on hover */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+/* Scroll Buttons */
+.scroll-btn {
+    background-color: #cc8344; /* Orange background color for the buttons */
+    color: white; /* White text color for the buttons */
+    border: none; /* No border for the buttons */
+    padding: 1% 1.5%; /* Padding for the buttons */
+    font-size: 1.5em; /* Font size for the buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 50%; /* Rounded corners for the buttons */
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.scroll-left {
+    margin-right: 4%;
+}
+
+.scroll-right {
+    margin-left: 4%;
+}
+
+.scroll-btn:hover {
+    background-color: #a36633; /* Darker orange on hover */
+}
+
+/* Reviews Page Star Rating Icon formatting for Scrollable Section */
+.rating-icon {
+    width: 75% !important; /* Width of the star icon */
+    height: auto !important; /* Height adjusts based on content */
+    display: block !important; /* Ensures the icon behaves like a block element */
+    margin: 10px auto !important; /* Centers the icon */
+    border-radius: 0 !important; /* No rounded corners for the icon */
+}
+
+/* Article Link formatting for Scollable Section */
+.article-link {
+    text-decoration: none; /* No underline for links */
+}
+
+/* '************************* */
+
+/****** Decorative Circle Styles ******/
+#advert-aside-circle {
+    width: 28rem; /* Width of the circle */
+    height: 28rem; /* Height of the circle */
+    left: 10%; /* Positioning from the left */
+}
+
+#about-circle{
+    width: 35rem; /* Width of the circle */
+    height: 35rem; /* Height of the circle */
+    position: absolute; /* Absolute positioning */
+    top: 30%; /* Positioning from the top */
+    left: -5%; /* Positioning from the left */
+    transform: translateY(-50%) rotate(-90deg); /* Rotates the circle */
+    z-index: -1; /* Ensures the circle is behind other elements */
+}
+
+#collection-circle {
+    width: 35rem; /* Width of the circle */
+    height: 35rem; /* Height of the circle */
+    position: absolute; /* Absolute positioning */
+    top: 60%; /* Positioning from the top */
+    left: 60%; /* Positioning from the left */
+    transform: translateY(-50%) rotate(35deg); /* Rotates the circle */
+    z-index: 0; /* Ensures the circle is behind other elements */
+}
+
+#contact-circle {
+    width: 35rem; /* Width of the circle */
+    height: 35rem; /* Height of the circle */
+    position: absolute; /* Absolute positioning */
+    top: 55%; /* Positioning from the top */
+    left: 45%; /* Positioning from the left */
+    transform: translate(-50%, -50%) rotate(35deg); /* Rotates the circle */
+    z-index: -1; /* Ensures the circle is behind other elements */
+}
+
+
+#register-circle {
+    width: 32rem; /* Width of the circle */
+    height: 32rem; /* Height of the circle */
+    position: absolute; /* Absolute positioning */
+    top: 60%; /* Positioning from the top */
+    left: 50%; /* Positioning from the left */
+    transform: translate(-50%, -50%) rotate(320deg); /* Rotates the circle */
+    z-index: -1; /* Ensures the circle is behind other elements */
+}
+
+/* General top-left and top-right circle formatting */
+#left-circle {
+    width: 20rem; /* Width of the circle */
+    height: 20rem; /* Height of the circle */
+    position: absolute; /* Absolute positioning */
+    top: 0%; /* Positioning from the top */
+    left: 0%; /* Positioning from the left */
+    transform: translate(-50%) rotate(0deg); /* Rotates the circle */
+    z-index: -1; /* Ensures the circle is behind other elements */
+}
+
+#right-circle {
+    width: 20rem; /* Width of the circle */
+    height: 20rem; /* Height of the circle */
+    position: absolute; /* Absolute positioning */
+    top: -5%; /* Positioning from the top */
+    left: 100%; /* Positioning from the left */
+    transform: translate(-50%) rotate(180deg); /* Rotates the circle */
+    z-index: -1; /* Ensures the circle is behind other elements */  
+}
+
+#events-circle{
+    width: 25rem; /* Width of the circle */
+    height: 25rem; /* Height of the circle */
+    position: absolute; /* Absolute positioning */
+    top: 40%; /* Positioning from the top */
+    left: 0%; /* Positioning from the left */
+    transform: translate(-50%) rotate(-90deg); /* Rotates the circle */
+    z-index: -1; /* Ensures the circle is behind other elements */
+}
+
+/* ********************************************************* */
+
+/****** Navigation styling ******/
+header a.logo img {
+    margin-right: 20px; /* Space between logo and text */
+    height: 40px; /* Height of the logo */
+}
+
+/* Add a hover effect */
+header nav a:hover a:focus {
+    background-color: #ddd; /* Light grey background on hover */
+    border-radius: 5px; /* Rounded corners */
+} 
+
+/* Navigation styling */
+#nav-bar {
+    display: flex; /* Flexbox for layout */
+    flex: 1; /* Takes available space */
+    justify-content: flex-start; /* Spread out links evenly */
+    align-items: center; /* Vertical alignment */
+}
+
+/* Navbar List Styling */
+#nav-bar ul {
+    list-style: none; /* Remove default bullet points */
+    display: flex; /* Makes the links appear in a row */
+    align-items: center; /* Aligns items vertically */
+    gap: 5px; /* Space between menu items */
+    padding: 0; /* Resets default padding */
+    margin: 0; /* Resets default margin */
+    text-align: center; /* Centers text inside the list items */
+}
+
+/* Navbar List Items */
+#nav_bar li {
+    display: inline-block; /* Ensures proper spacing */
+    align-items: center; /* Aligns items vertically */
+}
+
+/* Navbar link styling */
+#nav-bar a {
+    color: black; /* Text color for links */
+    text-decoration: none; /* No underline for links */
+    padding: 10px 15px; /* Padding for links */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    display: block; /* Makes the entire area clickable */
+}
+
+/* SlickNav Custom Styles */
+
+.slicknav_menu {
+    position: relative;  /* Ensures proper stacking context */
+    z-index: 9999; /* Makes sure the menu is on top of other elements */
+}
+
+/* Style the menu button */
+.slicknav_btn {
+    background-color: #e5d4c0 !important; /* Light background color for the button */
+    border-radius: 5px !important; /* Rounded corners for the button */
+    padding: 8px !important; /* Padding for the button */
+    margin: 10px !important; /* Space around the button */
+}
+
+/* Style the SlickNav menu */
+.slicknav_menu {
+    background: #f7f2ea !important; /* Light background color for the menu */
+    border: 1px solid #d3bfa6 !important; /* Border color for the menu */
+    border-radius: 8px !important; /* Rounded corners for the menu */
+    font-family: "Nunito", sans-serif !important; /* Font family for the menu */
+}
+
+/* Menu items */
+.slicknav_nav {
+    padding: 10px 0; /* Padding for the menu items */
+    text-align: center; /* Centers text inside the menu items */
+}
+
+.slicknav_nav a {
+    font-size: 18px !important; /* Font size for menu items */
+    color: #3a2e2a !important; /* Text color for menu items */
+    text-decoration: none !important; /* No underline for menu items */
+    padding: 12px 15px !important; /* Padding for menu items */
+    display: block !important; /* Makes the entire area clickable */
+    transition: background 0.3s ease, color 0.3s ease !important; /* Smooth transition for hover effects */
+}
+
+.slicknav_nav a:hover {
+    background: #d3bfa6 !important; /* Background color on hover */
+    color: white !important; /* Text color on hover */
+}
+
+/* Active menu item */
+.slicknav_nav .slicknav_row:hover,
+.slicknav_nav .slicknav_row.slicknav_open {
+    background: #c4a484; /* Background color for active menu item */
+}
+
+/* Ensure dropdown styles apply */
+.slicknav_nav ul {
+    list-style: none !important; /* Remove default bullet points */
+    padding: 0 !important; /* Resets default padding */
+}
+
+.slicknav_nav li {
+    border-bottom: 1px solid #d3bfa6; /* Border color for menu items */
+}
+
+.slicknav_nav li:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+/* Submenu Styling */
+.slicknav_nav ul {
+    padding-left: 15px; /* Indent submenus */
+}
+
+.slicknav_nav ul li a {
+    font-size: 16px !important; /* Font size for submenu items */
+    padding-left: 25px !important; /* Indent submenu items */
+}
+
+/* Ensure smooth dropdown transitions */
+.slicknav_collapsed .slicknav_arrow {
+    transform: rotate(0deg); /* Default arrow rotation */
+}
+
+.slicknav_open .slicknav_arrow {
+    transform: rotate(90deg); /* Arrow rotation when open */
+    transition: transform 0.3s ease; /* Smooth transition for arrow rotation */
+}
+
+/****** Footer Styles ******/
+footer {
+    margin: 2% 0 0 0; /* Space above the footer */
+    padding: 2%; /* Padding for the footer */
+    background: #8d77a1; /* Dark background color for the footer */
+    color: white; /* White text color for the footer */
+    text-align: center; /* Centers text inside the footer */
+    border-top: 2px solid black; /* Top border for the footer */
+    z-index: 4; /* Ensures the footer is above other elements */
+    position: relative; /* Allows the footer to be positioned relative to its parent */
+}
+
+footer h4 {
+    color: white; /* White text color for the footer heading */
+    margin-top: 2%; /* Space above the heading */
+    font-size: 1.2em; /* Font size for the heading */
+}
+
+footer ul {
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Resets default padding */
+    margin: 2% 0; /* Space above and below the list */
+}
+
+footer ul li {
+    margin: 1% 0; /* Space above and below each list item */
+}
+
+footer ul li a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* No underline for links */
+    transition: color 0.3s; /* Smooth transition for hover effects */
+}
+
+footer ul li a:hover {
+    color: #cc8344; /* Orange text color on hover */
+}
+
+.footer-note {
+    margin-top: 1%; /* Space above the note */
+    font-size: 0.9em; /* Font size for the note */
+}
+
+/****** Media Query ******/
+
+@media (max-width: 900px) {
+    body {
+        font-size: 90%; /* Adjust font size for smaller screens */
+    }
+    aside {
+        clear: both !important; /* Clears any floats */
+        width: 100% !important; /* Full width for the aside section */
+        background-color: #ba9ed4; /* Light background color for the aside section */
+        border-radius: 500px; /* Rounded corners for the aside section */
+    }
+    #advert-aside-circle {
+        width: 0rem !important; /* Width of the circle */
+        height: 0rem !important; /* Height of the circle */
+        left: 0%; /* Positioning from the left */
+    }
+    .advert{
+        max-height: 25rem !important; /* Maximum height for the advert section */
+    }
+    .advert-content {
+        left: 50% !important; /* Positioning from the left */
+    }
+    #advert-title { 
+        top: -2rem !important; /* Positioning from the top */
+        left: 0rem !important; /* Positioning from the left */
+    }
+    #advert-img { 
+        top: 5rem !important; /* Positioning from the top */
+    }
+    .home img {
+        margin-top: 10%; /* Space above the image */
+        left: 0 !important; /* Positioning from the left */
+        padding-right: 5% !important; /* Space on the right */
+    }
+    .home, .advert {
+        max-width: 100% !important; /* Full width for the home and advert sections */
+    }
+    #about-circle{
+        width: 25rem !important; /* Width of the circle */
+        height: 25rem !important; /* Height of the circle */
+        top: 40% !important; /* Positioning from the top */
+        left: -5%; /* Positioning from the left */
+    }
+    #browse-collection {
+        margin: 10% 0 0 60%; /* Space above and below the collection section */
+    }
+    .register-section {
+        padding-bottom: 20% !important; /* Padding for the registration section */
+    }
+    #register-circle {
+        top: 50% !important; /* Positioning from the top */
+    }
+}
+
+@media (max-width: 767px) {
+    #nav-bar {
+        display: none; /* Hides the navigation bar on smaller screens */
+    }
+
+    .home-advert-container {
+        flex-direction: column; /* Stacks items vertically */
+        gap: 5%; /* Space between items */
+    }
+
+    .categories-table button {
+        height: 8rem !important; /* Height of the button */
+    }
+
+    .advert {
+        margin-top: 0 !important; /* No margin above the advert section */
+    }
+}
+
+@media (max-width: 479px) {
+    body {
+        font-size: 80%; /* Adjust font size for smaller screens */
+    }
+    h2 {
+        margin-top: 15%; /* Space above the heading */
+    }
+    #browse-collection {
+        margin: 10% 0 0 0 !important; /* Space above and below the collection section */
+    }
+    #future-strategy {
+        margin: 5% 0 0 0 !important; /* Space above and below the strategy section */
+    }
+}

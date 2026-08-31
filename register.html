@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Elements -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta elements for SEO -->
+    <meta name="description"
+        content="Sign up for Online Audio Books and gain access to exclusive discounts, promotions, and the latest audiobook updates. Join our community today!">
+    <meta name="keywords"
+        content="register, sign up, audiobook membership, audiobook discounts, exclusive deals, promotions, audiobook updates, loyalty program, audiobook community, email subscription, SMS updates, audiobook offers">
+    <meta name="author" content="Online Audio Books">
+
+    <!-- Favicon link -->
+    <link rel="icon" href="Graphics/favicon.png" type="image/png">
+
+    <!-- Fonts -->
+    <!-- Playfair -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
+    <!-- Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Register | Online Audio Books</title>
+</head>
+
+<body>
+    <!-- Header and Navigation Bar -->
+    <header id="navbar-placeholder"></header>
+
+    <!-- Whole main section categorised as the register section -->
+    <main class="register-section">
+        <!-- Register Heading with content -->
+        <h2 class="register-title">Register</h2>
+
+        <!-- Container for the register form -->
+        <div class="register-container">
+            <form id="register-form">
+                <!-- The inputs for the register form -->
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Tel/ Mobile Number" required>
+                <input type="text" placeholder="Address" required>
+
+                <!-- Check boxes in the register form -->
+                <label>
+                    <input type="checkbox">
+                    <span class="checkox-text"><strong>Email</strong> I want to receive promotion material via
+                        email</span>
+                </label>
+                <label>
+                    <input type="checkbox">
+                    <span class="checkox-text"><strong>SMS</strong> I want to receive promotion material via SMS</span>
+                </label>
+                <label>
+                    <input type="checkbox" required>
+                    <span class="checkox-text"><strong>T&Cs</strong> I have read and understood the T&Cs. Read <a
+                            href="#">here</a>.</span>
+                </label>
+
+                <!-- Submit button after registering -->
+                <button id="submit-btn" type="submit">Submit ⮚</button>
+            </form>
+            <!-- Message container to display success or error messages -->
+            <div id="message-container" style="display:none;"></div>
+        </div>
+
+        <!-- Decorative Circle behind the registration form-->
+        <div class="circle-container" id="register-circle"></div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer-placeholder"></footer>
+
+    <!-- Script link for slicknav -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+    <!-- Link to JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+[
+    {
+        "id": "great-gatsby",
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "Graphics/Books/The_Great_Gatsby-F._Scott_Fitzgerald.jpg",
+        "desc": "A tragic tale of love, wealth, and the American Dream set in the Jazz Age.",
+        "summary": "The Great Gatsby is a novel about the decline of the American Dream in the 1920s, exploring themes of decadence, idealism, resistance to change, social upheaval, and excess.",
+        "biography": "F. Scott Fitzgerald was an American novelist and short story writer, known for his depictions of the Jazz Age in the 1920s. His works explore themes of wealth, love, and disillusionment.",
+        "price": "£7.99"
+    },
+    {
+        "id": "to-kill-a-mockingbird",
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "image": "Graphics/Books/To_Kill_a_Mockingbird-Harper_Lee.jpg",
+        "desc": "A powerful novel set in the 1930s Deep South, addressing racial injustice and moral growth.",
+        "summary": "This Pulitzer Prize-winning novel focuses on the Finch family, especially Scout, who learns about prejudice, racism, and human dignity while her father, Atticus, defends an innocent black man accused of raping a white woman.",
+        "biography": "Harper Lee was an American novelist best known for her novel *To Kill a Mockingbird*, which deals with serious themes like racial injustice and moral growth. She won the Pulitzer Prize for Fiction in 1961.",
+        "price": "£9.99"
+    },
+    {
+        "id": "1984",
+        "title": "1984",
+        "author": "George Orwell",
+        "image": "Graphics/Books/1984-George_Orwell.jpg",
+        "desc": "A chilling dystopian novel about a totalitarian regime that watches and controls every aspect of life.",
+        "summary": "In a future where the government, led by the Party and its leader Big Brother, monitors every citizen's behavior, Winston Smith rebels against the system, questioning truth, history, and the nature of freedom.",
+        "biography": "George Orwell was an English novelist, essayist, journalist, and critic. His works often address issues of social injustice, totalitarianism, and the abuse of power, with *1984* being one of his most famous works.",
+        "price": "£8.49"
+    },
+    {
+        "id": "sapiens",
+        "title": "Sapiens: A Brief History of Humankind",
+        "author": "Yuval Noah Harari",
+        "image": "Graphics/Books/Sapiens-Yuval_Noah_Harari.jpg",
+        "desc": "A sweeping history of humanity, exploring how Homo sapiens came to dominate the Earth.",
+        "summary": "Sapiens traces the history of human beings from the emergence of Homo sapiens in the Stone Age to the present, exploring the development of language, religion, economics, and political systems, as well as the impact of agriculture, science, and capitalism.",
+        "biography": "Yuval Noah Harari is an Israeli historian and professor at the Hebrew University of Jerusalem. He is the author of bestsellers *Sapiens* and *Homo Deus*, which explore the past and future of humanity.",
+        "price": "£12.99"
+    },
+    {
+        "id": "educated",
+        "title": "Educated",
+        "author": "Tara Westover",
+        "image": "Graphics/Books/Educated-Tara_Westover.jpg",
+        "desc": "A powerful memoir about overcoming an isolated and restrictive upbringing to pursue education.",
+        "summary": "Educated is the memoir of Tara Westover, who grew up in a strict and survivalist family in rural Idaho, with no formal schooling. Her journey to education, beginning with self-teaching and eventually earning a PhD from the University of Cambridge, is both inspiring and transformative.",
+        "biography": "Tara Westover is an American author and historian. *Educated*, her debut memoir, became a bestseller and has been praised for its raw, honest depiction of her struggles with family, faith, and the pursuit of knowledge.",
+        "price": "£10.99"
+    },
+    {
+        "id": "becoming",
+        "title": "Becoming",
+        "author": "Michelle Obama",
+        "image": "Graphics/Books/Becoming-Michelle_Obama.jpg",
+        "desc": "The deeply personal memoir of Michelle Obama, reflecting on her life from childhood to the White House.",
+        "summary": "In Becoming, Michelle Obama shares her experiences growing up on the South Side of Chicago, her years as a lawyer and mother, and her time as First Lady of the United States. The book is an exploration of identity, resilience, and the journey of personal and public growth.",
+        "biography": "Michelle Obama is an American attorney, author, and former First Lady of the United States. Her memoir *Becoming* was an instant bestseller and has been praised for its honesty, insight, and inspiring message.",
+        "price": "£11.49"
+    },
+        {
+        "id": "dune",
+        "title": "Dune",
+        "author": "Frank Herbert",
+        "image": "Graphics/Books/Dune-Frank_Herbert.jpg",
+        "desc": "A sci-fi epic set on the desert planet Arrakis, exploring themes of power, religion, and ecology.",
+        "summary": "Set in the distant future, *Dune* tells the story of Paul Atreides, whose family becomes embroiled in the politics of Arrakis, the only source of the universe's most valuable substance, melange, also known as 'spice'. The novel explores themes of destiny, politics, religion, and environmentalism.",
+        "biography": "Frank Herbert was an American science fiction author best known for his *Dune* series. He wrote extensively on politics, ecology, and religion, with *Dune* being his most celebrated work.",
+        "price": "£10.99"
+    },
+    {
+        "id": "the-hobbit",
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "image": "Graphics/Books/The_Hobbit-J.R.R.-Tolkien.jpg",
+        "desc": "A fantasy adventure that follows Bilbo Baggins on a journey to reclaim treasure guarded by a dragon.",
+        "summary": "In *The Hobbit*, Bilbo Baggins, a simple hobbit, is thrust into an epic adventure when he joins a group of dwarves to reclaim their homeland and treasure from the dragon Smaug. Along the way, Bilbo encounters trolls, goblins, elves, and the powerful One Ring.",
+        "biography": "J.R.R. Tolkien was an English author, philologist, and academic best known for writing *The Hobbit* and *The Lord of the Rings*. His works have shaped modern fantasy literature and continue to influence readers and writers worldwide.",
+        "price": "£9.49"
+    },
+    {
+        "id": "enders-game",
+        "title": "Ender's Game",
+        "author": "Orson Scott Card",
+        "image": "Graphics/Books/Enders_Game-Orson_Scott_Card.jpg",
+        "desc": "A young boy trains in a military academy to fight an alien species in this fast-paced science fiction novel.",
+        "summary": "Ender Wiggin, a brilliant child, is recruited into a military training academy to prepare for a war against an alien species. The novel explores themes of leadership, ethics, and the consequences of war, all set in a complex and futuristic world.",
+        "biography": "Orson Scott Card is an American author, best known for his science fiction series *Ender's Game*. Card has won multiple Hugo and Nebula awards, and his works have been adapted into films and other media.",
+        "price": "£8.99"
+    },
+    {
+        "id": "atomic-habits",
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "image": "Graphics/Books/Atomic_Habits-James_Clear.jpg",
+        "desc": "A practical guide to building good habits and breaking bad ones to improve your life.",
+        "summary": "*Atomic Habits* provides actionable strategies for improving habits, focusing on the idea of making small, incremental changes that compound over time. James Clear explores how tiny habits can lead to remarkable results in personal and professional life.",
+        "biography": "James Clear is an author and speaker, known for his expertise in habit formation, decision-making, and continuous improvement. His book *Atomic Habits* became a bestseller, offering readers a framework for lasting personal growth.",
+        "price": "£8.99"
+    },
+    {
+        "id": "the-power-of-now",
+        "title": "The Power of Now",
+        "author": "Eckhart Tolle",
+        "image": "Graphics/Books/The_Power_of_Now-Eckhart_Tolle.jpg",
+        "desc": "A spiritual guide to living in the present moment and letting go of the ego.",
+        "summary": "*The Power of Now* emphasizes the importance of living in the present moment, free from the distractions of past regrets or future anxieties. Eckhart Tolle explores mindfulness and spirituality, offering practical advice on how to achieve inner peace.",
+        "biography": "Eckhart Tolle is a spiritual teacher and author, best known for his book *The Power of Now*. His teachings focus on mindfulness, consciousness, and transcending the ego, and have inspired millions of readers around the world.",
+        "price": "£9.99"
+    },
+    {
+        "id": "how-to-win-friends-and-influence-people",
+        "title": "How to Win Friends and Influence People",
+        "author": "Dale Carnegie",
+        "image": "Graphics/Books/How_to_Win_Friends_and_Influence_People-Dale_Carnegie.jpg",
+        "desc": "A timeless classic on building relationships, improving communication, and influencing others positively.",
+        "summary": "This self-help classic offers practical advice on how to connect with others, handle criticism, and persuade people. Dale Carnegie's principles have been widely adopted by professionals, leaders, and individuals looking to improve their social and professional interactions.",
+        "biography": "Dale Carnegie was an American writer and lecturer, known for his courses on self-improvement and interpersonal skills. His book *How to Win Friends and Influence People* has been a worldwide bestseller for decades, continuing to influence readers across generations.",
+        "price": "£7.99"
+    },
+    {
+        "id": "harry-potter-and-the-philosophers-stone",
+        "title": "Harry Potter and the Philosopher's Stone",
+        "author": "J.K. Rowling",
+        "image": "Graphics/Books/Harry_Potter_and_the_Philosophers_Stone-J.K._Rowling.jpg",
+        "desc": "The first book in the iconic series about a young wizard's journey to defeat dark forces.",
+        "summary": "Harry Potter, an orphan raised by his cruel aunt and uncle, discovers on his 11th birthday that he is a wizard. He attends Hogwarts School of Witchcraft and Wizardry, where he makes new friends and uncovers dark secrets about his past, including a connection to the dark wizard Voldemort.",
+        "biography": "J.K. Rowling is a British author best known for writing the *Harry Potter* series, which has become a worldwide phenomenon. Her books have sold over 500 million copies and have been adapted into films and other media.",
+        "price": "£8.99"
+    },
+    {
+        "id": "charlottes-web",
+        "title": "Charlotte's Web",
+        "author": "E.B. White",
+        "image": "Graphics/Books/Charlottes_Web-E.B._White.jpg",
+        "desc": "A heartwarming tale of friendship between a pig named Wilbur and a spider named Charlotte.",
+        "summary": "*Charlotte's Web* tells the story of Wilbur, a pig who befriends Charlotte, a wise and kind spider, at a farm. Charlotte helps Wilbur avoid being slaughtered by writing words of praise for him in her web, teaching readers lessons about friendship, loyalty, and selflessness.",
+        "biography": "E.B. White was an American author and essayist, best known for his children's books *Charlotte's Web*, *Stuart Little*, and *Trumpet of the Swan*. His works have earned him a lasting place in children's literature.",
+        "price": "£6.99"
+    },
+    {
+        "id": "matilda",
+        "title": "Matilda",
+        "author": "Roald Dahl",
+        "image": "Graphics/Books/Matilda-Roald_Dahl.jpg",
+        "desc": "A brilliant young girl uses her intelligence and telekinetic powers to overcome her neglectful parents and cruel headmistress.",
+        "summary": "*Matilda* is the story of a young girl with extraordinary abilities, including telekinesis. Despite being mistreated by her parents and the tyrannical Miss Trunchbull, Matilda learns to stand up for herself and others with the help of her kind teacher, Miss Honey.",
+        "biography": "Roald Dahl was a British novelist, short story writer, and poet, famous for his children's books, which include *Charlie and the Chocolate Factory*, *James and the Giant Peach*, and *Matilda*. His stories often feature dark humor and imaginative plots.",
+        "price": "£7.49"
+    },
+    {
+        "id": "the-hating-game",
+        "title": "The Hating Game",
+        "author": "Sally Thorne",
+        "image": "Graphics/Books/The_Hating_Game-Sally_Thorne.jpg",
+        "desc": "A romantic comedy about two coworkers who engage in a rivalry that evolves into something more.",
+        "summary": "*The Hating Game* follows Lucy and Joshua, two office rivals who work together at a publishing company. What starts as a competition over a promotion soon turns into a steamy romance as they navigate their feelings for each other while still keeping up their antagonistic personas.",
+        "biography": "Sally Thorne is an Australian author known for writing *The Hating Game*, a romantic comedy that became a bestseller and was adapted into a film. Her writing is known for witty dialogue and charming, relatable characters.",
+        "price": "£14.99"
+    },
+    {
+        "id": "me-before-you",
+        "title": "Me Before You",
+        "author": "Jojo Moyes",
+        "image": "Graphics/Books/Me_Before_You-Jojo_Moyes.jpg",
+        "desc": "A heartbreaking love story about a woman who becomes a caregiver to a man paralyzed from the neck down.",
+        "summary": "*Me Before You* tells the story of Louisa Clark, who becomes a caregiver for Will Traynor, a once-active man left paralyzed after an accident. As their relationship deepens, Louisa learns that Will has plans to end his life, and she sets out to change his mind.",
+        "biography": "Jojo Moyes is a British author, best known for her novels *Me Before You*, *The Giver of Stars*, and *The Horse Dancer*. Her works often explore themes of love, loss, and personal growth.",
+        "price": "£8.49"
+    },
+    {
+        "id": "the-rosie-project",
+        "title": "The Rosie Project",
+        "author": "Graeme Simsion",
+        "image": "Graphics/Books/The_Rosie Project-Graeme_Simsion.jpg",
+        "desc": "A quirky romance about a socially awkward professor who embarks on a project to find the perfect wife.",
+        "summary": "*The Rosie Project* follows Don Tillman, a genetics professor who decides to find a wife using a scientific questionnaire. His plan is thrown into chaos when he meets Rosie, a free-spirited bartender who is completely wrong for him, but they embark on an adventure together that changes both of their lives.",
+        "biography": "Graeme Simsion is an Australian author and screenwriter. His debut novel, *The Rosie Project*, became a global bestseller and was adapted into a feature film.",
+        "price": "£12.49"
+    },
+    {
+        "id": "the-silent-patient",
+        "title": "The Silent Patient",
+        "author": "Alex Michaelides",
+        "image": "Graphics/Books/The_Silent_Patient-Alex_Michaelides.jpg",
+        "desc": "A psychological thriller about a woman who stops speaking after being accused of murdering her husband.",
+        "summary": "*The Silent Patient* tells the story of Alicia Berenson, a celebrated artist who shoots her husband and then goes silent, refusing to speak a word. Theo Faber, a forensic psychologist, becomes obsessed with unraveling the mystery of her silence and uncovering the truth behind the crime.",
+        "biography": "Alex Michaelides is a British-Cypriot author and screenwriter. His debut novel, *The Silent Patient*, became a worldwide bestseller and was praised for its shocking twist and gripping narrative.",
+        "price": "£9.49"
+    },
+    {
+        "id": "big-little-lies",
+        "title": "Big Little Lies",
+        "author": "Liane Moriarty",
+        "image": "Graphics/Books/Big_Little_Lies-Liane_Moriarty.jpg",
+        "desc": "A darkly comedic mystery about the lives of three women, their secrets, and a murder in a tight-knit community.",
+        "summary": "*Big Little Lies* follows the lives of three women living in a small community. Their seemingly perfect lives unravel as their secrets and lies are exposed, culminating in a murder that leaves the whole town questioning who is responsible.",
+        "biography": "Liane Moriarty is an Australian author of best-selling novels, including *Big Little Lies*, *The Husband's Secret*, and *Nine Perfect Strangers*. Her works are known for exploring complex relationships and dark humor.",
+        "price": "£7.99"
+    },
+    {
+        "id": "gone-girl",
+        "title": "Gone Girl",
+        "author": "Gillian Flynn",
+        "image": "Graphics/Books/Gone_Girl-Gillian_Flynn.jpg",
+        "desc": "A psychological thriller about a woman who goes missing on her fifth wedding anniversary, and the mystery that unfolds.",
+        "summary": "*Gone Girl* centers around the disappearance of Amy Dunne on her fifth wedding anniversary. As the investigation unfolds, secrets about her marriage to Nick Dunne emerge, leading to a shocking and disturbing conclusion.",
+        "biography": "Gillian Flynn is an American author and screenwriter known for her psychological thrillers, including *Gone Girl*, *Sharp Objects*, and *Dark Places*. Her works often explore themes of deception, violence, and complex psychological states.",
+        "price": "£8.49"
+    },
+    {
+        "id": "the-diary-of-a-young-girl",
+        "title": "The Diary of a Young Girl",
+        "author": "Anne Frank",
+        "image": "Graphics/Books/The_Diary_of_a_Young Girl-Anne_Frank.jpg",
+        "desc": "The poignant and powerful diary of Anne Frank, a Jewish girl who hid from the Nazis during WWII.",
+        "summary": "*The Diary of a Young Girl* is the famous diary of Anne Frank, a Jewish girl who hid with her family in a secret annex in Amsterdam during the Nazi occupation. In her diary, Anne records her thoughts, fears, and experiences as she lived in hiding, providing a unique and deeply human perspective on the horrors of war.",
+        "biography": "Anne Frank was a Jewish girl who wrote a diary while in hiding from the Nazis during World War II. Her diary, published posthumously, has been translated into numerous languages and remains one of the most important works documenting the Holocaust.",
+        "price": "£9.49"
+    },
+    {
+        "id": "the-splendid-and-the-vile",
+        "title": "The Splendid and the Vile",
+        "author": "Erik Larson",
+        "image": "Graphics/Books/The_Splendid_and_the_Vile-Erik_Larson.jpg",
+        "desc": "A gripping account of Winston Churchill's leadership during the Blitz of WWII.",
+        "summary": "*The Splendid and the Vile* chronicles Winston Churchill's leadership during the early years of World War II, focusing on the Blitz—the German bombing campaign against Britain. Through a mixture of personal stories and historical events, Larson paints a portrait of Churchill's determination and the resilience of the British people during their darkest hour.",
+        "biography": "Erik Larson is an American author known for his narrative nonfiction books, including *The Devil in the White City* and *Dead Wake*. His works often blend history with personal stories, creating compelling and accessible accounts of historical events.",
+        "price": "£10.49"
+    },
+    {
+        "id": "guns-germs-and-steel",
+        "title": "Guns, Germs, and Steel",
+        "author": "Jared Diamond",
+        "image": "Graphics/Books/Guns_Germs_and_Steel-Jared_Diamond.jpg",
+        "desc": "A groundbreaking exploration of the factors that shaped human history and civilization.",
+        "summary": "*Guns, Germs, and Steel* examines the environmental and geographical factors that contributed to the rise of Western civilizations and their dominance over other societies. Jared Diamond explores how different societies developed weapons, technologies, and immunities that played pivotal roles in their expansion and success throughout history.",
+        "biography": "Jared Diamond is an American geographer, historian, and author. He is best known for his works on human history and geography, especially *Guns, Germs, and Steel*, which won numerous awards and was adapted into a PBS documentary.",
+        "price": "£11.49"
+    }
+]

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><!-- Meta Elements -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta elements for SEO -->
+    <meta name="description"
+        content="Read customer reviews and testimonials about Online Audio Books. Discover why users love our audiobook selection, quality, and seamless shopping experience.">
+    <meta name="keywords"
+        content="audiobook reviews, customer testimonials, audiobook ratings, user feedback, audiobook platform, best audiobook service, online audiobook store, audiobook quality, audiobook shopping experience, audiobook website reviews">
+    <meta name="author" content="Online Audio Books">
+
+    <!-- Favicon link -->
+    <link rel="icon" href="Graphics/favicon.png" type="image/png">
+
+    <!-- Fonts -->
+    <!-- Playfair -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
+    <!-- Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Customer Reviews | Online Audio Books</title>
+</head>
+
+<body>
+    <!-- Header and Navigation Bar -->
+    <header id="navbar-placeholder"></header>
+
+    <main>
+        <!-- Reviews Heading with content -->
+        <h2>Reviews</h2>
+        <p>Online Audio Books is committed to providing high-quality audiobooks while ensuring a seamless browsing and
+            listening experience for our users. With a dedicated team, a diverse audiobook catalogue, and a focus on
+            customer satisfaction, we aim to be the preferred choice for audiobook enthusiasts.</p>
+
+        <!-- Scrollable Reviews Section -->
+        <section class="scroll-container">
+            <article class="scroll-wrapper">
+                <!-- Entire container enclosed as a table -->
+                <table class="scroll-table">
+                    <tbody>
+                        <!-- One row -->
+                        <tr>
+                            <!-- multiple elements in the row -->
+                            <td class="scroll-table-card">
+                                <figure>
+                                    <!-- Contains an image with a caption title and content for each card -->
+                                    <img src="Graphics/profile.jpg" alt="Emma W. Profile">
+                                    <!-- second image to show customer ratings -->
+                                    <img src="Graphics/5star_rating_icon.png" alt="5 Star Rating" class="rating-icon">
+                                    <figcaption>
+                                        <h4>Emma W. says...</h4>
+                                        <p><em>“Online Audio Books has an amazing selection of audiobooks. The
+                                                audio quality is fantastic, and the prices are reasonable.”</em></p>
+                                    </figcaption>
+                                </figure>
+                            </td>
+                            <td class="scroll-table-card">
+                                <figure>
+                                    <img src="Graphics/profile.jpg" alt="John P.'s Profile">
+                                    <img src="Graphics/4star_rating_icon.png" alt="4 Star Rating" class="rating-icon">
+                                    <figcaption>
+                                        <h4>John P. says...</h4>
+                                        <p><em>“I love how easy it is to find and purchase audiobooks. The website
+                                                is user-friendly, and the customer support is excellent.”</em></p>
+                                    </figcaption>
+                                </figure>
+                            </td>
+                            <td class="scroll-table-card">
+                                <figure>
+                                    <img src="Graphics/profile.jpg" alt="Sohpie M.'s Profile">
+                                    <img src="Graphics/4star_rating_icon.png" alt="4 Star Rating" class="rating-icon">
+                                    <figcaption>
+                                        <h4>Sophie M. says...</h4>
+                                        <p><em>“The variety of genres and authors available is impressive. I've
+                                                discovered so many great books through Online Audio Books.”</em></p>
+                                    </figcaption>
+                                </figure>
+                            </td>
+                            <td class="scroll-table-card">
+                                <figure>
+                                    <img src="Graphics/profile.jpg" alt="Olivia R.'s Profile">
+                                    <img src="Graphics/5star_rating_icon.png" alt="5 Star Rating" class="rating-icon">
+                                    <figcaption>
+                                        <h4>Olivia R. says...</h4>
+                                        <p><em>“The platform is incredibly easy to use, and I love the variety of
+                                                audiobooks available. Highly recommend for any book lover!”</em></p>
+                                    </figcaption>
+                                </figure>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <!-- Buttons at the bottom of the container used to scroll through the cards -->
+            <section class="scroll-buttons">
+                <button id="scroll-left" class="scroll-btn" aria-label="Scroll Left">←</button>
+                <button id="scroll-right" class="scroll-btn" aria-label="Scroll Right">→</button>
+            </section>
+        </section>
+
+        <!-- Decorative Circle to the left top corner-->
+        <div class="circle-container" id="left-circle"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer-placeholder"></footer>
+
+    <!-- Script link for slicknav -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+    <!-- Link to JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

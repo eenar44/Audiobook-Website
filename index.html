@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Elements -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Meta elements for SEO -->
+    <meta name="description"
+        content="A vast collection of high-quality audiobooks at Online Audio Books. Enjoy listening experiences with our expertly curated selection.">
+    <meta name="keywords"
+        content="audiobooks, books, reading, listening, learning, fiction, non-fiction, science fiction, fantasy, self-help, personal development, children books, romance, mystery, thriller, history, audio, audio books, online, online audio books, online audiobooks, online books, online reading, online listening, online learning, online fiction, online non-fiction, online science fiction, online fantasy, online self-help, online personal development, online children books, online romance, online mystery, online thriller, online history, online audio, online audio books">
+    <meta name="author" content="Online Audio Books">
+
+    <!-- Favicon link -->
+    <link rel="icon" href="Graphics/favicon.png" type="image/png">
+
+    <!-- Fonts -->
+    <!-- Playfair -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
+    <!-- Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Online Audio Books</title>
+</head>
+
+<body>
+    <!-- Header and Navigation Bar -->
+    <header id="navbar-placeholder"></header>
+
+    <main>
+        <!-- Home and Advert Container -->
+        <section class="home-advert-container">
+            <!-- Home Section -->
+            <section id="home" class="section home">
+                <!-- Logo image on the left of the screen -->
+                <img src="Graphics/Logo_Beige.png" alt="Online Audio Books Logo" />
+                <!-- Button promoting to browse collection leading to the catalgue -->
+                <a href="catalogue.html" id="browse-collection">
+                    <button>Browse Our Collection ⮚</button>
+                </a>
+            </section>
+
+            <!-- Advert Section -->
+            <aside id="advert" class="advert">
+                <!-- Right side of the content -->
+                <section class="advert-content">
+                    <!-- Title and image, ovewritten every couple seconds in JS -->
+                    <h3 id="advert-title">Today's <br> Best Seller...</h3>
+                    <img id="advert-img" src="Graphics/Books/To_Kill_a_Mockingbird-Harper_Lee.jpg"
+                        alt="Best Seller Book">
+                </section>
+
+                <!-- Decortative circle positioned behind the advert section -->
+                <div class="circle-container" id="advert-aside-circle"></div>
+            </aside>
+        </section>
+
+
+        <!-- About Us Section -->
+        <section id="about" class="section about">
+
+            <!-- Title and content for this section -->
+            <h2>About s</h2>
+            <p>We are passionate about providing high-quality audiobooks and promoting a culture of reading and
+                learning. Our commitment to this cause is reflected in our selection process and the quality of audio
+                production. We offer detailed information and personalised assistance to help users make informed
+                choices.</p>
+
+
+            <!-- Our Promise subsection with content -->
+            <!-- ID so that this particular header can be formatted a little differently -->
+            <h3 id="promise-h3">Our Promise</h3>
+            <p>
+                We are passionate about providing high-quality audiobooks and promoting a culture of reading and
+                learning. Our commitment to this cause is reflected in our selection process and the quality of audio
+                production. We offer detailed information and personalised assistance to help users make informed
+                choices.
+            </p>
+
+            <!-- Button linking to the future strategies page -->
+            <a href="future_strategy.html" id="future-strategy">
+                <button>Read More ⮚</button>
+            </a>
+
+            <!-- Decorative Circle in the about section -->
+            <div class="circle-container" id="about-circle"></div>
+        </section>
+
+        <!-- Browse Collection Section -->
+        <section id="collection" class="section collection">
+
+            <!-- Title and Content for the Browse Collection Section -->
+            <h2>Browse Our Collection</h2>
+            <p>Online Audio Books operates across multiple genres to provide a diverse range of options for our users.
+                Browse from...</p>
+
+            <!-- Table containing the categories of each audiobook theme, links directly to that theme in the catalogue for easy access -->
+            <table class="categories-table">
+                <!-- Two buttons per row -->
+                <tr>
+                    <td><button onclick="location.href='catalogue.html#fiction'">Fiction ⮚</button></td>
+                    <td><button onclick="location.href='catalogue.html#non-fiction'">Non-Fiction ⮚</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="location.href='catalogue.html#sci-fi'">Science Fiction &
+                            Fantasy ⮚</button></td>
+                    <td><button onclick="location.href='catalogue.html#self-help'">Self-Help & Personal
+                            Development ⮚</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="location.href='catalogue.html#children'">Children's Books ⮚</button>
+                    </td>
+                    <td><button onclick="location.href='catalogue.html#romance'">Romance ⮚</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="location.href='catalogue.html#mystery'">Mystery & Thriller ⮚</button>
+                    </td>
+                    <td><button onclick="location.href='catalogue.html#history'">History ⮚</button></td>
+                </tr>
+            </table>
+
+            <!-- Decorative Circle on this section -->
+            <div class="circle-container" id="collection-circle"></div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="section contact">
+            <!-- Title for this section -->
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us, and we'll be happy to help!</p>
+
+            <!-- Form for users to input their queries
+             prompts for the name, emaila nd their concern -->
+            <div class="contact-container">
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message ⮚</button>
+                </form>
+
+                <!-- Our email, phone number and address -->
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="#">support@onlineaudiobooks.com</a></p>
+                    <p><strong>Phone:</strong> <a href="#">+44 1234 567 890</a></p>
+                    <p><strong>Address:</strong> 123 Audiobook St, London, UK, AB0 1CD</p>
+                </div>
+            </div>
+
+            <!-- Message to be displayed when the form is submitted successfully -->
+            <div id="contact-message" style="display:none;"></div>
+
+            <!-- Decorative Circle -->
+            <div class="circle-container" id="contact-circle"></div>
+        </section>
+
+
+    </main>
+    <!-- Footer -->
+    <footer id="footer-placeholder"></footer>
+
+    <!-- Script link for slicknav -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+    <!-- Link to JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
